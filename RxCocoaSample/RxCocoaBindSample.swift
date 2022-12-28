@@ -96,8 +96,8 @@ class RxCocoaBindSample: UIViewController {
     func bind() {
         someSwitch1.rx.isOn
             .observe(on: MainScheduler.instance)
-            .subscribe(onNext: { isOn in
-                self.someLabel1.text = isOn ? "is On!" : "is Off!"
+            .subscribe(onNext: { [weak self] isOn in
+                self?.someLabel1.text = isOn ? "is On!" : "is Off!"
             })
             .disposed(by: disposeBag)
         
@@ -109,8 +109,8 @@ class RxCocoaBindSample: UIViewController {
         
         someLabel3Text
             .observe(on: MainScheduler.instance)
-            .subscribe(onNext: { string in
-                self.someLabel3.text = string
+            .subscribe(onNext: { [weak self] string in
+                self?.someLabel3.text = string
             })
             .disposed(by: disposeBag)
         
