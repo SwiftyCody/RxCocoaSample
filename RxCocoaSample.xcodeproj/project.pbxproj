@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		0EA933F529571A6E00D9B172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA933F429571A6E00D9B172 /* AppDelegate.swift */; };
 		0EA933F729571A6E00D9B172 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA933F629571A6E00D9B172 /* SceneDelegate.swift */; };
-		0EA933F929571A6E00D9B172 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA933F829571A6E00D9B172 /* ViewController.swift */; };
-		0EA933FC29571A6E00D9B172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EA933FA29571A6E00D9B172 /* Main.storyboard */; };
+		0EA933F929571A6E00D9B172 /* RxCocoaBindSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA933F829571A6E00D9B172 /* RxCocoaBindSample.swift */; };
 		0EA933FE29571A6F00D9B172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EA933FD29571A6F00D9B172 /* Assets.xcassets */; };
 		0EA9340129571A6F00D9B172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EA933FF29571A6F00D9B172 /* LaunchScreen.storyboard */; };
 		0EA9340C29571A6F00D9B172 /* RxCocoaSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9340B29571A6F00D9B172 /* RxCocoaSampleTests.swift */; };
 		0EA9341629571A7000D9B172 /* RxCocoaSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9341529571A7000D9B172 /* RxCocoaSampleUITests.swift */; };
 		0EA9341829571A7000D9B172 /* RxCocoaSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9341729571A7000D9B172 /* RxCocoaSampleUITestsLaunchTests.swift */; };
+		0EB82214295C53C800FFFCBB /* SomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB82213295C53C800FFFCBB /* SomeViewController.swift */; };
+		0EB82216295C53D100FFFCBB /* SomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB82215295C53D100FFFCBB /* SomeViewModel.swift */; };
 		49BAA517B4A7FC654D412F27 /* Pods_RxCocoaSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4530AD1306D7CDA37E31DEA /* Pods_RxCocoaSample.framework */; };
 		64ECD340175103CA0E2812BD /* Pods_RxCocoaSample_RxCocoaSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DBD1E7E875028B604C481C /* Pods_RxCocoaSample_RxCocoaSampleUITests.framework */; };
 		6F390EE1A9E18821A5EE9E3C /* Pods_RxCocoaSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E539F619A768DCB111F2461 /* Pods_RxCocoaSampleTests.framework */; };
@@ -42,8 +43,7 @@
 		0EA933F129571A6E00D9B172 /* RxCocoaSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxCocoaSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA933F429571A6E00D9B172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EA933F629571A6E00D9B172 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0EA933F829571A6E00D9B172 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0EA933FB29571A6E00D9B172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0EA933F829571A6E00D9B172 /* RxCocoaBindSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCocoaBindSample.swift; sourceTree = "<group>"; };
 		0EA933FD29571A6F00D9B172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EA9340029571A6F00D9B172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EA9340229571A6F00D9B172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +52,8 @@
 		0EA9341129571A6F00D9B172 /* RxCocoaSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxCocoaSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA9341529571A7000D9B172 /* RxCocoaSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCocoaSampleUITests.swift; sourceTree = "<group>"; };
 		0EA9341729571A7000D9B172 /* RxCocoaSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCocoaSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0EB82213295C53C800FFFCBB /* SomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewController.swift; sourceTree = "<group>"; };
+		0EB82215295C53D100FFFCBB /* SomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewModel.swift; sourceTree = "<group>"; };
 		4648B23B3C47B11CB23586B2 /* Pods-RxCocoaSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxCocoaSampleTests.release.xcconfig"; path = "Target Support Files/Pods-RxCocoaSampleTests/Pods-RxCocoaSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		56DE02016F88B7845DA2E419 /* Pods-RxCocoaSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxCocoaSample.release.xcconfig"; path = "Target Support Files/Pods-RxCocoaSample/Pods-RxCocoaSample.release.xcconfig"; sourceTree = "<group>"; };
 		7EC0D9C995023E84C3E7B5C3 /* Pods-RxCocoaSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxCocoaSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-RxCocoaSampleTests/Pods-RxCocoaSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,8 +120,8 @@
 			children = (
 				0EA933F429571A6E00D9B172 /* AppDelegate.swift */,
 				0EA933F629571A6E00D9B172 /* SceneDelegate.swift */,
-				0EA933F829571A6E00D9B172 /* ViewController.swift */,
-				0EA933FA29571A6E00D9B172 /* Main.storyboard */,
+				0EA933F829571A6E00D9B172 /* RxCocoaBindSample.swift */,
+				0EB82217295C53ED00FFFCBB /* DriverSample */,
 				0EA933FD29571A6F00D9B172 /* Assets.xcassets */,
 				0EA933FF29571A6F00D9B172 /* LaunchScreen.storyboard */,
 				0EA9340229571A6F00D9B172 /* Info.plist */,
@@ -144,6 +146,15 @@
 			path = RxCocoaSampleUITests;
 			sourceTree = "<group>";
 		};
+		0EB82217295C53ED00FFFCBB /* DriverSample */ = {
+			isa = PBXGroup;
+			children = (
+				0EB82213295C53C800FFFCBB /* SomeViewController.swift */,
+				0EB82215295C53D100FFFCBB /* SomeViewModel.swift */,
+			);
+			path = DriverSample;
+			sourceTree = "<group>";
+		};
 		4267BC9D5F2F4E628AB4099F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +165,6 @@
 				7EC0D9C995023E84C3E7B5C3 /* Pods-RxCocoaSampleTests.debug.xcconfig */,
 				4648B23B3C47B11CB23586B2 /* Pods-RxCocoaSampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,7 +290,6 @@
 			files = (
 				0EA9340129571A6F00D9B172 /* LaunchScreen.storyboard in Resources */,
 				0EA933FE29571A6F00D9B172 /* Assets.xcassets in Resources */,
-				0EA933FC29571A6E00D9B172 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,8 +434,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EA933F929571A6E00D9B172 /* ViewController.swift in Sources */,
+				0EA933F929571A6E00D9B172 /* RxCocoaBindSample.swift in Sources */,
+				0EB82216295C53D100FFFCBB /* SomeViewModel.swift in Sources */,
 				0EA933F529571A6E00D9B172 /* AppDelegate.swift in Sources */,
+				0EB82214295C53C800FFFCBB /* SomeViewController.swift in Sources */,
 				0EA933F729571A6E00D9B172 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,14 +475,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0EA933FA29571A6E00D9B172 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EA933FB29571A6E00D9B172 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0EA933FF29571A6F00D9B172 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -609,9 +612,10 @@
 				INFOPLIST_FILE = RxCocoaSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,9 +641,10 @@
 				INFOPLIST_FILE = RxCocoaSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
